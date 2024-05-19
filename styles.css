@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+button{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+.header {
+    width: 1830px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Добавляем отступы по бокам */
+}
+
+.logo {
+    width: 195px;
+    height: 56px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.action-button,
+.search-button,
+.login-button {
+    width: 141px;
+    height: 40px;
+    margin-right: 20px; /* Отступ между кнопками */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем бордеры */
+    font-size: 28px; /* Размер текста */
+    font-weight: normal; /* Шрифт Regular */
+}
+
+
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    display: none;
+    animation: fade 1s;
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    padding: 10px;
+    font-size: 20px;
+  }
+ 
+
+.search-background{
+    width: 912px;
+    height: 230px;
+    background-color: white;
+    position: relative;
+    bottom: 60px;
+    margin: 0 auto;
+    border-radius: 29px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    width: 838px;
+    height: 56px;
+    border-radius: 14px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+}
+.find-button {
+    width: 48px;
+    height: 56px;
+    background-color: #E7A720;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 14px 14px 0;
+
+}
+
+input {
+    border: 0;
+    width: 100px; /* Ограничиваем ширину каждого поля до 100px */
+}
+
+input + input {
+    margin-right: 60px; /* Добавляем отступ между каждым полем ввода */
+}
+
+.actions-container{
+    width:912px;
+    margin:0 auto;
+}
+.actions-container h1{
+    font-size:63px;
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.promote{
+    background-color: #FC5920;
+    width:442px;
+    Height:384px;
+    flex-basis: 45%;
+    border-radius:29px;
+    color:white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.promote2{
+    background-color: #428DB4;
+    width:442px;
+    Height:384px;
+    flex-basis: 45%;
+    border-radius:29px;
+    color:white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.promote img{
+width:442px;
+}
+
+h3{
+    margin:0;
+    padding: 10px 0 10px 0;
+    text-align:center;
+    font-size:24px;
+}
+
+.text{
+    padding:5px;
+    font-size:18px;
+}
+
+.feedback-container{
+    width:912px;
+    margin:0 auto;
+}
+.feedback-container h1{
+    font-size:63px;
+}
+
+.feedback{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.review{
+    width:442px;
+    Height:384px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius:29px;
+
+}
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.user-info img{
+    padding: 30px 0 0 30px;
+    }
+
+
+p{
+    margin:0;
+}
+
+.review-text{
+    margin: 15px 30px 15px 30px;
+    font-size:20px;
+}
+
+.passengers-input {
+    position: relative;
+}
+
+#passengersMenu {
+    width:70px;
+    height:150px;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+
+}
+
+#passengersMenu li {
+    cursor: pointer;
+}
+
+#passengersMenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.subscription-block {
+    width: 227px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.email-input {
+    width: 215px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom:10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius:5px;
+
+}
+
+.subscribe-button {
+    width: 227px;
+    height: 40px;
+    padding:5px;
+    background-color: #E7A720;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius:5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+
+}
+
+.footer{
+    height:80px;
+    width: 100%;
+    background-color:#428DB4;
+    color:white;
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.list-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 20px 0; 
+
+}
+
+.card{
+    height: 100px;
+    width: 900px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    display:flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#428DB4;
+    color:white;
+    margin: 10px 0 10px 0; 
+    padding:0 10px 0 10px;
+}
+.Book-button{
+    color:white;
+    background-color:#FC5920;
+    height: 40px;
+    width:150px;
+    border-radius:6px;
+}
+
+.main-page{
+    height:800px;
+}
+
+.registration-container{
+    width:900px;
+    height:500px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    margin:50px auto;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;;
+    gap:20px;
+    background-color: #428DB4;
+}
+
+.name-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+
+}
+.surname-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+    margin-right:0px;
+
+
+
+}
+
+.documents-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+    margin-right:0px;
+
+
+}
+.phone-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+    margin-right:0px;
+
+
+}
+.password-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+    margin-right:0px;
+
+
+}
+.repeat-password-field{
+    width: 316px;
+    height:35px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    border-radius:5px;
+    padding: 0 20px 0 20px;
+    margin-right:0px;
+
+
+}
+
+.Registration-button{
+    width:228px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);    
+    border-radius:5px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E7A720;
+    color:white;
+    
+
+}
+
+.registration-container h1{
+    color:white
+}
+
+.login-container{
+    width:600px;
+    height:300px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    margin:100px auto;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;;
+    gap:20px;
+    background-color: #428DB4;
+}
+
+.login-container h1{
+    color:white
+}
+.Login-button{
+    width:228px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);    
+    border-radius:5px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E7A720;
+    color:white;
+}
+
+.error-message{
+    color:rgb(99, 22, 22);
+    padding:10px;
+}
+
+input:focus{
+    outline: none;
+    border:none;
+}
+
+.no-acc{
+    color:white;
+}

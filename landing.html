@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="logo"><a href="landing.html" >
+        <img src="media/test-0-nav-4.png" alt="Логотип компании">
+    </a>
+    </div>
+    <div class="buttons">
+    <button class="action-button"> <a href="#Actions">Акции</a></button>
+    <button class="search-button"> <a href="#Search">Поиск</a></button>
+    <button class="login-button"><a href="log-in.html" >
+        <img src="../practice collect/media/test-0-nav-4.png">
+    </a>
+    </button>
+    </div>
+</header>
+
+<div class="slider-container">
+    <div class="slides">
+      <div class="slide"><img src="media/slider/slide1.png" alt="Slide 1"></div>
+      <div class="slide"><img src="media/slider/slide2.png" alt="Slide 2"></div>
+      <div class="slide"><img src="media/slider/slide3.png" alt="Slide 3"></div>
+      <div class="slide"><img src="media/slider/slide4.png" alt="Slide 4"></div>
+      <div class="slide"><img src="media/slider/slide5.png" alt="Slide 5"></div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</div>
+
+<a name="Search"></a>
+<div class="search-background">
+    <div class="search-form">
+            <input type="value" id="from" placeholder="Откуда">
+            <input type="value" id="to" placeholder="Куда">
+            <input id="datafield" required="" type="text" class="form-control" placeholder="Туда" onfocus="(this.type='date')" onfocusout="(this.type='date')"/>
+            <input id="datafield" required="" type="text" class="form-control" placeholder="Обратно" onfocus="(this.type='date')" onfocusout="(this.type='date')"/>
+            <input type="value" id="passengersField" placeholder="Пассажиры" readonly> <ul class="passengers-menu" id="passengersMenu">
+                <li data-value="1">1</li>
+                <li data-value="2">2</li>
+                <li data-value="3">3</li>
+                <li data-value="4">4</li>
+                <li data-value="5">5</li>
+                <li data-value="6">6</li>
+                <li data-value="7">7</li>
+                <li data-value="8">8</li>
+
+            </ul>
+                
+            <button><div class="find-button">
+                <a href="flight-list.html" >
+            <img src="../practice collect/media/find 1.png" alt="Search Icon"></div></button> </a>
+    </div>
+</div>
+<a name="Actions"></a>
+<div class="actions-container">
+    <h1>Акции</h1> 
+    <div class="actions">
+        <div class="promote">
+            <img src="media/promotions/test-0-ai.png">
+            <h3>Returning and Changing Your Tickets</h3>
+            <div class="text">The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+                Once all of this is over, we will continue exploring this world the way we used to. 
+                Special rules that have been developed for this challenging situation will help you cancel your trip
+                or postpone it until later.</div>
+        </div>
+        <div class="promote2">
+            <img src="media/promotions/test-0-ai (1).png">
+            <h3>Best offers</h3>
+            <div class="text">To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+                what you’ve come through. And to think of new dreams that will be so special!</div>
+
+        </div>
+        <div class="promote2">
+            <img src="media/promotions/test-0-ai (2).png">
+            <h3>See you more often</h3>
+            <div class="text">Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+                see your loved ones more often. Choose our company to fly to where you are always expected.</div>
+
+        </div>
+        <div class="promote">
+            <img src="media/promotions/test-0-ai (3).png">
+            <h3>Everything is on again</h3>
+            <div class="text">From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+                a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="feedback-container">
+    <h1>Отзывы</h1> 
+    <div class="feedback">
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+        <div class="review">
+            <div class="user-info">
+                <img src="media/user 1.png">
+                <div class="user-details">
+                    <h3>Анастасия</h3>
+                    <p>26, Самара</p>
+                </div>
+            </div>
+            <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="subscription-block">
+    <div class="title">Подписка на акции</div>
+    <input type="email" placeholder=" Email" class="email-input">
+    <button class="subscribe-button">Подписаться</button>
+</div>
+
+<div class="footer">
+    <p>8 (800) 100-10-10</p>
+    <p>ХИТРОВ МАТВЕЙ МИХАЙЛОВИЧ</p>
+
+</div>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>

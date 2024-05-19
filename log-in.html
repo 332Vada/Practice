@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="landing.html" >
+            <img src="../practice collect/media/test-0-logo.png" alt="Логотип компании">
+        </a>
+        </div>
+        <div class="buttons">
+        <button class="action-button"> <a href="#Actions">Акции</a></button>
+        <button class="search-button"> <a href="#Search">Поиск</a></button>
+        <button class="login-button"><a href="log-in.html" >
+            <img src="../practice collect/media/test-0-nav-4.png">
+        </a>
+        </button>
+        </div>
+    </header>
+
+    <div class="main-page">
+        <div class="login-container">
+            <h1>Авторизация</h1>
+            <input type="text" placeholder="Введите номер телефона" class="phone-field" id="phone-field">
+            <input type="text" placeholder="Введите пароль" class="password-field" id="password-field">
+            <button class="Login-button" type="button" onclick="validateLogin()">Войти</button>
+            <p><a class="no-acc" href="registration.html" > Нет Аккаунта? Зарегистрироваться</a></p>
+            <p id="error-message"></p>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>8 (800) 100-10-10</p>
+        <p>ХИТРОВ МАТВЕЙ МИХАЙЛОВИЧ</p>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
